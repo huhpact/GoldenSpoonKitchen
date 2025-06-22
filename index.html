@@ -4,27 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden Spoon Kitchen - Traditional Recipes & Culinary Stories</title>
-    
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Discover timeless recipes and culinary stories at Golden Spoon Kitchen. Traditional cooking techniques, family recipes, and kitchen wisdom for passionate home cooks.">
     <meta name="keywords" content="recipes, cooking, traditional cuisine, home cooking, culinary stories, kitchen tips, food blog">
     <meta name="author" content="Golden Spoon Kitchen">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://goldenspoonkitchen.com/">
     <meta property="og:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
     <meta property="og:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
-    <meta property="og:image" content="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200">
-    
-    <!-- Twitter -->
+    <meta property="og:image" content="/images/thumb.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://goldenspoonkitchen.com/">
     <meta property="twitter:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
     <meta property="twitter:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
-    <meta property="twitter:image" content="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200">
-    
-    <!-- Structured Data for Website -->
+    <meta property="twitter:image" content="/images/thumb.png">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -38,27 +30,27 @@
         }
     }
     </script>
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="icon" href="/images/favicon.ico" />
 </head>
 <body>
-    <!-- Progress Bar -->
     <div class="progress-bar" id="progress-bar"></div>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-utensils logo-icon"></i>
-                <span class="logo-text">Golden Spoon Kitchen</span>
+           <div class="nav-logo">
+                <a href="/index.html" class="logo-link">
+                    <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
+                </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -71,7 +63,13 @@
                     <a href="#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link"><i class="fas fa-user-chef"></i> About</a>
+                    <a href="#about" class="nav-link"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                <path class="b" d="m21,10H7.65L3.91,1.59l-1.83.81,3.38,7.59h-2.46c-.55,0-1,.45-1,1,0,3.61,1.9,6.87,5,8.66v1.34c0,.55.45,1,1,1h8c.55,0,1-.45,1-1v-1.34c3.1-1.78,5-5.05,5-8.66,0-.55-.45-1-1-1Z"/>
+                <path class="b" d="M20 6A1 1 0 1 0 20 8 1 1 0 1 0 20 6z"/>
+                <path class="b" d="M9 2A1 1 0 1 0 9 4 1 1 0 1 0 9 2z"/>
+                <path class="b" d="M17.5 2A1.5 1.5 0 1 0 17.5 5 1.5 1.5 0 1 0 17.5 2z"/>
+                <path class="b" d="M13 4A2 2 0 1 0 13 8 2 2 0 1 0 13 4z"/>
+                </svg> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
@@ -90,7 +88,6 @@
         </div>
     </nav>
 
-    <!-- Search Overlay -->
     <div class="search-overlay" id="search-overlay">
         <div class="search-container">
             <input type="text" placeholder="Search recipes..." class="search-input" id="search-input">
@@ -100,13 +97,12 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-background">
             <div class="hero-slider">
-                <div class="slide active" style="background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
-                <div class="slide" style="background-image: url('https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
-                <div class="slide" style="background-image: url('https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+                <div class="slide active" style="background-image: url('/images/hero1.jpg')"></div>
+                <div class="slide" style="background-image: url('/images/hero2.jpg')"></div>
+                <div class="slide" style="background-image: url('/images/hero3.jpg')"></div>
             </div>
             <div class="hero-overlay"></div>
         </div>
@@ -131,7 +127,6 @@
         </div>
     </section>
 
-    <!-- Featured Recipes Section -->
     <section class="featured-recipes" id="recipes">
         <div class="container">
             <div class="section-header reveal-animation">
@@ -164,10 +159,13 @@
             <div class="recipes-grid">
                 <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
                     <div class="card-image">
-                        <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creamy Carbonara Pasta">
+                        <img src="/images/carbonara.jpg" alt="Creamy Carbonara Pasta">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 25 min</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Easy</span>
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
+                            <path d="M5 20H19V22H5z"/>
+                            </svg> Easy</span>
                         </div>
                         <div class="card-actions">
                             <button class="action-btn favorite-btn" title="Add to favorites">
@@ -198,10 +196,13 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Maria" class="author-avatar">
-                                <span class="card-author">By Chef Maria</span>
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+
+                                <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
+                                </svg>
+                                <span class="card-author">By Chef Paul</span>
                             </div>
-                            <span class="card-date">Dec 15, 2024</span>
+                            <span class="card-date">Jun 22, 2025</span>
                         </div>
                         <a href="/recipes/carbonara.html" class="card-link">
                             <i class="fas fa-arrow-right"></i>
@@ -210,250 +211,9 @@
                     </div>
                 </article>
 
-                <article class="recipe-card card-hover-effect" data-category="comfort" data-delay="200">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Homemade Bread">
-                        <div class="card-overlay">
-                            <span class="recipe-time"><i class="fas fa-clock"></i> 3 hours</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="action-btn favorite-btn" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="action-btn share-btn" title="Share recipe">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.9 (89 reviews)</span>
-                        </div>
-                        <h3 class="card-title">Grandmother's Sourdough</h3>
-                        <p class="card-description">The secret to perfect homemade bread, passed down through generations. Nothing beats the aroma of fresh bread in your kitchen.</p>
-                        <div class="card-tags">
-                            <span class="tag">Bread</span>
-                            <span class="tag">Traditional</span>
-                            <span class="tag">Homemade</span>
-                        </div>
-                        <div class="card-meta">
-                            <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Antonio" class="author-avatar">
-                                <span class="card-author">By Chef Antonio</span>
-                            </div>
-                            <span class="card-date">Dec 12, 2024</span>
-                        </div>
-                        <a href="#" class="card-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read Recipe
-                        </a>
-                    </div>
-                </article>
-
-                <article class="recipe-card card-hover-effect" data-category="comfort" data-delay="300">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Comfort Soup">
-                        <div class="card-overlay">
-                            <span class="recipe-time"><i class="fas fa-clock"></i> 45 min</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Easy</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="action-btn favorite-btn" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="action-btn share-btn" title="Share recipe">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.7 (156 reviews)</span>
-                        </div>
-                        <h3 class="card-title">Healing Chicken Soup</h3>
-                        <p class="card-description">More than just a recipe – it's a warm hug in a bowl. Perfect for cold days and caring for loved ones.</p>
-                        <div class="card-tags">
-                            <span class="tag">Soup</span>
-                            <span class="tag">Comfort</span>
-                            <span class="tag">Healthy</span>
-                        </div>
-                        <div class="card-meta">
-                            <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Elena" class="author-avatar">
-                                <span class="card-author">By Chef Elena</span>
-                            </div>
-                            <span class="card-date">Dec 10, 2024</span>
-                        </div>
-                        <a href="#" class="card-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read Recipe
-                        </a>
-                    </div>
-                </article>
-
-                <article class="recipe-card card-hover-effect" data-category="dessert" data-delay="400">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chocolate Cake">
-                        <div class="card-overlay">
-                            <span class="recipe-time"><i class="fas fa-clock"></i> 90 min</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="action-btn favorite-btn" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="action-btn share-btn" title="Share recipe">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.9 (203 reviews)</span>
-                        </div>
-                        <h3 class="card-title">Decadent Chocolate Cake</h3>
-                        <p class="card-description">Rich, moist, and absolutely irresistible. This chocolate cake recipe will become your go-to for every celebration.</p>
-                        <div class="card-tags">
-                            <span class="tag">Dessert</span>
-                            <span class="tag">Chocolate</span>
-                            <span class="tag">Celebration</span>
-                        </div>
-                        <div class="card-meta">
-                            <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Sarah" class="author-avatar">
-                                <span class="card-author">By Chef Sarah</span>
-                            </div>
-                            <span class="card-date">Dec 8, 2024</span>
-                        </div>
-                        <a href="#" class="card-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read Recipe
-                        </a>
-                    </div>
-                </article>
-
-                <article class="recipe-card card-hover-effect" data-category="italian" data-delay="500">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Margherita Pizza">
-                        <div class="card-overlay">
-                            <span class="recipe-time"><i class="fas fa-clock"></i> 45 min</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="action-btn favorite-btn" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="action-btn share-btn" title="Share recipe">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.6 (98 reviews)</span>
-                        </div>
-                        <h3 class="card-title">Authentic Margherita Pizza</h3>
-                        <p class="card-description">Simple ingredients, extraordinary flavor. Master the art of pizza making with this authentic Neapolitan recipe.</p>
-                        <div class="card-tags">
-                            <span class="tag">Italian</span>
-                            <span class="tag">Pizza</span>
-                            <span class="tag">Classic</span>
-                        </div>
-                        <div class="card-meta">
-                            <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Giuseppe" class="author-avatar">
-                                <span class="card-author">By Chef Giuseppe</span>
-                            </div>
-                            <span class="card-date">Dec 5, 2024</span>
-                        </div>
-                        <a href="#" class="card-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read Recipe
-                        </a>
-                    </div>
-                </article>
-
-                <article class="recipe-card card-hover-effect" data-category="dessert" data-delay="600">
-                    <div class="card-image">
-                        <img src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apple Pie">
-                        <div class="card-overlay">
-                            <span class="recipe-time"><i class="fas fa-clock"></i> 2 hours</span>
-                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
-                        </div>
-                        <div class="card-actions">
-                            <button class="action-btn favorite-btn" title="Add to favorites">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <button class="action-btn share-btn" title="Share recipe">
-                                <i class="fas fa-share-alt"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-rating">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="rating-text">4.8 (145 reviews)</span>
-                        </div>
-                        <h3 class="card-title">Classic Apple Pie</h3>
-                        <p class="card-description">Nothing says home like the aroma of a freshly baked apple pie. This recipe delivers perfect flaky crust every time.</p>
-                        <div class="card-tags">
-                            <span class="tag">Dessert</span>
-                            <span class="tag">Apple</span>
-                            <span class="tag">Traditional</span>
-                        </div>
-                        <div class="card-meta">
-                            <div class="author-info">
-                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Mary" class="author-avatar">
-                                <span class="card-author">By Chef Mary</span>
-                            </div>
-                            <span class="card-date">Dec 3, 2024</span>
-                        </div>
-                        <a href="#" class="card-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read Recipe
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </div>
+                
     </section>
 
-    <!-- Stories Section -->
     <section class="stories-section" id="stories">
         <div class="container">
             <div class="section-header reveal-animation">
@@ -516,7 +276,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="about-content reveal-animation">
@@ -547,23 +306,16 @@
                 </div>
                 <div class="about-image">
                     <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cooking with love">
-                    <div class="image-overlay">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <span class="overlay-text">Watch Our Story</span>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-content reveal-animation">
                 <h2 class="newsletter-title">
-                    <span class="title-script">Stay Connected</span>
+                    <span class="title-script" style="color: #fefefe;">Stay Connected</span>
                 </h2>
                 <p class="newsletter-subtitle">Get weekly recipes and cooking tips delivered to your inbox</p>
                 <form class="newsletter-form" id="newsletter-form">
@@ -594,14 +346,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <i class="fas fa-utensils logo-icon"></i>
-                        <span class="logo-text">Golden Spoon Kitchen</span>
+                       <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
                     </div>
                     <p class="footer-description">Bringing families together through the art of cooking, one recipe at a time.</p>
                     <div class="social-links">
@@ -676,7 +426,6 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>

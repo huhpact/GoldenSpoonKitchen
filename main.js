@@ -50,21 +50,18 @@ searchOverlay.addEventListener('click', (e) => {
         searchInput.value = '';
     }
 });
-// Navbar Scroll Effects
 let lastScrollY = window.scrollY;
 let ticking = false;
 
 function updateNavbar() {
     const currentScrollY = window.scrollY;
-    
-    // Add scrolled class
+
     if (currentScrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
     
-    // Hide/show navbar on scroll
     if (currentScrollY > lastScrollY && currentScrollY > 100) {
         navbar.classList.add('hidden');
     } else {
@@ -84,7 +81,6 @@ function requestTick() {
 
 window.addEventListener('scroll', requestTick);
 
-// Progress Bar
 function updateProgressBar() {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -94,7 +90,6 @@ function updateProgressBar() {
 
 window.addEventListener('scroll', updateProgressBar);
 
-// Back to Top Button
 function updateBackToTop() {
     if (window.scrollY > 300) {
         backToTop.classList.add('visible');
@@ -112,7 +107,6 @@ backToTop.addEventListener('click', () => {
     });
 });
 
-// Hero Slider
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -122,16 +116,13 @@ function nextSlide() {
     slides[currentSlide].classList.add('active');
 }
 
-// Auto-advance slides every 5 seconds
 setInterval(nextSlide, 5000);
 
-// Recipe Filtering
 const filterBtns = document.querySelectorAll('.filter-btn');
 const recipeCards = document.querySelectorAll('.recipe-card');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // Remove active class from all buttons
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         
@@ -155,7 +146,6 @@ filterBtns.forEach(btn => {
     });
 });
 
-// Favorite Button Functionality
 document.querySelectorAll('.favorite-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const icon = btn.querySelector('i');
@@ -163,8 +153,7 @@ document.querySelectorAll('.favorite-btn').forEach(btn => {
             icon.classList.remove('far');
             icon.classList.add('fas');
             btn.style.color = '#ff6b6b';
-            
-            // Show notification
+
             showNotification('Added to favorites!', 'success');
         } else {
             icon.classList.remove('fas');
@@ -176,7 +165,6 @@ document.querySelectorAll('.favorite-btn').forEach(btn => {
     });
 });
 
-// Share Button Functionality
 document.querySelectorAll('.share-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const card = btn.closest('.recipe-card');
@@ -189,7 +177,6 @@ document.querySelectorAll('.share-btn').forEach(btn => {
                 url: window.location.href
             });
         } else {
-            // Fallback: copy to clipboard
             const url = window.location.href;
             navigator.clipboard.writeText(`Check out this amazing recipe: ${title} - ${url}`)
                 .then(() => {
@@ -202,17 +189,14 @@ document.querySelectorAll('.share-btn').forEach(btn => {
     });
 });
 
-// Newsletter Form
 newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const email = newsletterForm.querySelector('.newsletter-input').value;
-    
-    // Simple email validation
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
     if (emailRegex.test(email)) {
-        // Simulate form submission
         showNotification('Thank you for subscribing!', 'success');
         newsletterForm.querySelector('.newsletter-input').value = '';
     } else {
@@ -220,7 +204,6 @@ newsletterForm.addEventListener('submit', (e) => {
     }
 });
 
-// Animated Counter for Stats
 function animateCounter(element, target, duration = 2000) {
     const start = 0;
     const startTime = performance.now();
@@ -228,8 +211,7 @@ function animateCounter(element, target, duration = 2000) {
     function updateCounter(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        
-        // Easing function
+
         const easeOut = 1 - Math.pow(1 - progress, 3);
         const current = Math.floor(start + (target - start) * easeOut);
         
@@ -247,7 +229,6 @@ function animateCounter(element, target, duration = 2000) {
     requestAnimationFrame(updateCounter);
 }
 
-// Intersection Observer for Animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -257,8 +238,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            
-            // Animate counters when hero stats come into view
+  
             if (entry.target.classList.contains('hero-stats')) {
                 const statNumbers = entry.target.querySelectorAll('.stat-number');
                 statNumbers.forEach(stat => {
@@ -267,7 +247,6 @@ const observer = new IntersectionObserver((entries) => {
                 });
             }
             
-            // Stagger animation for recipe cards
             if (entry.target.classList.contains('recipe-card')) {
                 const delay = parseInt(entry.target.getAttribute('data-delay')) || 0;
                 setTimeout(() => {
@@ -280,12 +259,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all animated elements
 document.querySelectorAll('.reveal-animation, .slide-in-left, .slide-in-right, .recipe-card, .hero-stats').forEach(el => {
     observer.observe(el);
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -303,9 +280,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Notification System
 function showNotification(message, type = 'info') {
-    // Remove existing notifications
     const existingNotifications = document.querySelectorAll('.notification');
     existingNotifications.forEach(notification => notification.remove());
     
@@ -318,7 +293,6 @@ function showNotification(message, type = 'info') {
         </div>
     `;
     
-    // Add styles
     notification.style.cssText = `
         position: fixed;
         top: 90px;
@@ -333,8 +307,7 @@ function showNotification(message, type = 'info') {
         max-width: 300px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     `;
-    
-    // Set background color based on type
+   
     switch (type) {
         case 'success':
             notification.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
@@ -351,12 +324,10 @@ function showNotification(message, type = 'info') {
     
     document.body.appendChild(notification);
     
-    // Animate in
     setTimeout(() => {
         notification.style.transform = 'translateX(0)';
     }, 100);
     
-    // Auto remove after 3 seconds
     setTimeout(() => {
         notification.style.transform = 'translateX(400px)';
         setTimeout(() => {
@@ -374,7 +345,6 @@ function getNotificationIcon(type) {
     }
 }
 
-// Search Functionality
 function performSearch(query) {
     const searchResults = [];
     const cards = document.querySelectorAll('.recipe-card');
@@ -399,12 +369,10 @@ searchInput.addEventListener('input', (e) => {
     
     if (query.length > 2) {
         const results = performSearch(query);
-        // Here you could show search suggestions or results
         console.log(`Found ${results.length} results for "${query}"`);
     }
 });
 
-// Lazy Loading for Images
 const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -419,16 +387,13 @@ document.querySelectorAll('img').forEach(img => {
     imageObserver.observe(img);
 });
 
-// Keyboard Navigation Support
 document.addEventListener('keydown', (e) => {
-    // Close search overlay with Escape
     if (e.key === 'Escape') {
         if (searchOverlay.classList.contains('active')) {
             searchOverlay.classList.remove('active');
             searchInput.value = '';
         }
-        
-        // Close mobile menu
+
         if (navMenu.classList.contains('active')) {
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
@@ -436,24 +401,19 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Initialize page
 document.addEventListener('DOMContentLoaded', () => {
-    // Add loaded class to body for animations
     document.body.classList.add('loaded');
-    
-    // Initialize recipe cards as visible
+
     recipeCards.forEach(card => {
         card.classList.add('visible');
     });
-    
-    // Set up initial state
+
     updateProgressBar();
     updateBackToTop();
     
     console.log('Golden Spoon Kitchen loaded successfully! 🍳✨');
 });
 
-// Performance optimization: Debounce scroll events
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -466,28 +426,11 @@ function debounce(func, wait) {
     };
 }
 
-// Apply debouncing to scroll-heavy functions
 window.addEventListener('scroll', debounce(() => {
     updateProgressBar();
     updateBackToTop();
 }, 10));
 
-// Error Handling
 window.addEventListener('error', (e) => {
     console.error('An error occurred:', e.error);
-    // You could show a user-friendly error message here
 });
-
-// Service Worker Registration (for PWA capabilities)
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        // Uncomment when you have a service worker
-        // navigator.serviceWorker.register('/sw.js')
-        //     .then((registration) => {
-        //         console.log('SW registered: ', registration);
-        //     })
-        //     .catch((registrationError) => {
-        //         console.log('SW registration failed: ', registrationError);
-        //     });
-    });
-}

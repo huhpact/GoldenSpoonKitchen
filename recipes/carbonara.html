@@ -4,40 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Carbonara Recipe - Golden Spoon Kitchen</title>
-    
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple - perfect for any night of the week.">
     <meta name="keywords" content="carbonara recipe, Italian pasta, authentic carbonara, pasta recipes, Italian cooking, easy dinner recipes">
     <meta name="author" content="Golden Spoon Kitchen">
-    
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://goldenspoonkitchen.com/carbonara-recipe.html">
     <meta property="og:title" content="Classic Carbonara Recipe - Golden Spoon Kitchen">
     <meta property="og:description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple.">
-    <meta property="og:image" content="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1200">
-    
-    <!-- Twitter -->
+    <meta property="og:image" content="/images/thumb.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://goldenspoonkitchen.com/carbonara-recipe.html">
     <meta property="twitter:title" content="Classic Carbonara Recipe - Golden Spoon Kitchen">
     <meta property="twitter:description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple.">
-    <meta property="twitter:image" content="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1200">
-    
-    <!-- Recipe Structured Data -->
+    <meta property="twitter:image" content="/images/thumb.png">
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <link rel="icon" href="/images/favicon.ico" />
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org/",
         "@type": "Recipe",
         "name": "Classic Carbonara",
         "image": [
-            "https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=800"
+            "/images/thumb.png"
         ],
         "author": {
             "@type": "Person",
-            "name": "Chef Maria"
+            "name": "Chef Paul"
         },
-        "datePublished": "2024-12-15",
+        "datePublished": "2025-06-22",
         "description": "A timeless Italian classic that brings the authentic flavors of Rome to your kitchen. Creamy, indulgent, and surprisingly simple.",
         "prepTime": "PT10M",
         "cookTime": "PT15M",
@@ -93,594 +92,47 @@
         }
     }
     </script>
-    
-    <!-- Font Awesome -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/style.css">
-    <style>
-        /* Recipe-specific styles */
-        .recipe-hero {
-            height: 70vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .recipe-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(139, 69, 19, 0.3), rgba(0, 0, 0, 0.5));
-            z-index: 1;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            padding: 0 20px;
-        }
-        
-        .recipe-breadcrumb {
-            position: absolute;
-            top: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px 20px;
-            border-radius: 25px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .breadcrumb-link {
-            color: #8B4513;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .breadcrumb-link:hover {
-            text-decoration: underline;
-        }
-        
-        .recipe-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
-        
-        .recipe-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .recipe-meta {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            background: linear-gradient(135deg, #f8f8f8, #ffffff);
-            padding: 30px;
-            border-radius: 20px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .meta-item {
-            text-align: center;
-            padding: 15px;
-            border-radius: 15px;
-            background: white;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-        
-        .meta-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .meta-icon {
-            font-size: 1.5rem;
-            color: #8B4513;
-            margin-bottom: 8px;
-        }
-        
-        .meta-label {
-            font-weight: 600;
-            color: #8B4513;
-            display: block;
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-        }
-        
-        .meta-value {
-            font-size: 1.1rem;
-            color: #333;
-            font-weight: 500;
-        }
-        
-        .recipe-actions {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-        
-        .action-button {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        
-        .btn-save {
-            background: #28a745;
-            color: white;
-        }
-        
-        .btn-save:hover {
-            background: #218838;
-            transform: translateY(-2px);
-        }
-        
-        .btn-print {
-            background: #6c757d;
-            color: white;
-        }
-        
-        .btn-print:hover {
-            background: #5a6268;
-            transform: translateY(-2px);
-        }
-        
-        .btn-share {
-            background: #007bff;
-            color: white;
-        }
-        
-        .btn-share:hover {
-            background: #0056b3;
-            transform: translateY(-2px);
-        }
-        
-        .share-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .share-menu {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            min-width: 200px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-        
-        .share-dropdown.active .share-menu {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(-50%) translateY(10px);
-        }
-        
-        .share-option {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 15px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #333;
-            transition: background 0.3s ease;
-            margin-bottom: 5px;
-        }
-        
-        .share-option:hover {
-            background: #f8f9fa;
-        }
-        
-        .share-option.facebook { color: #1877f2; }
-        .share-option.instagram { color: #e4405f; }
-        .share-option.pinterest { color: #bd081c; }
-        .share-option.twitter { color: #1da1f2; }
-        .share-option.whatsapp { color: #25d366; }
-        
-        .ingredients-section,
-        .instructions-section {
-            margin: 50px 0;
-        }
-        
-        .section-heading {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.2rem;
-            color: #8B4513;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #8B4513;
-            padding-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .section-icon {
-            font-size: 1.8rem;
-        }
-        
-        .ingredients-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .ingredients-list {
-            list-style: none;
-            padding: 0;
-            background: #f9f9f9;
-            border-radius: 15px;
-            padding: 25px;
-        }
-        
-        .ingredients-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid #eee;
-            position: relative;
-            padding-left: 40px;
-            display: flex;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-        
-        .ingredients-list li:hover {
-            background: rgba(139, 69, 19, 0.05);
-            border-radius: 8px;
-            margin: 0 -10px;
-            padding-left: 50px;
-        }
-        
-        .ingredients-list li:before {
-            content: "";
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 8px;
-            background: #8B4513;
-            border-radius: 50%;
-        }
-        
-        .ingredient-checkbox {
-            margin-right: 10px;
-            transform: scale(1.2);
-        }
-        
-        .instructions-list {
-            counter-reset: step-counter;
-        }
-        
-        .instruction-step {
-            counter-increment: step-counter;
-            margin: 30px 0;
-            padding: 25px;
-            background: linear-gradient(135deg, #f9f9f9, #ffffff);
-            border-radius: 15px;
-            border-left: 5px solid #8B4513;
-            position: relative;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-        
-        .instruction-step:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-        }
-        
-        .instruction-step:before {
-            content: counter(step-counter);
-            position: absolute;
-            left: -20px;
-            top: 20px;
-            background: linear-gradient(135deg, #8B4513, #A0522D);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
-        }
-        
-        .step-title {
-            font-weight: 600;
-            color: #8B4513;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
-        }
-        
-        .step-description {
-            line-height: 1.7;
-            color: #555;
-        }
-        
-        .nutrition-info {
-            background: linear-gradient(135deg, #8B4513, #A0522D);
-            color: white;
-            padding: 40px;
-            border-radius: 20px;
-            margin: 50px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .nutrition-info::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-        }
-        
-        .nutrition-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .tips-section {
-            background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
-            padding: 40px;
-            border-radius: 20px;
-            margin: 50px 0;
-            border: 2px solid #4CAF50;
-            position: relative;
-        }
-        
-        .tips-section::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-family: 'Font Awesome 6 Free';
-            content: '\f0eb';
-            font-weight: 900;
-            font-size: 3rem;
-            color: rgba(76, 175, 80, 0.2);
-        }
-        
-        .tips-section h3 {
-            color: #2E7D32;
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .tips-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .tips-list li {
-            margin: 15px 0;
-            padding-left: 30px;
-            position: relative;
-            line-height: 1.6;
-        }
-        
-        .tips-list li::before {
-            content: '\f058';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            color: #4CAF50;
-            font-size: 1.1rem;
-        }
-        
-        .rating-section {
-            text-align: center;
-            margin: 50px 0;
-            padding: 40px;
-            background: linear-gradient(135deg, #fff8e1, #ffecb3);
-            border-radius: 20px;
-            border: 2px solid #FFD700;
-        }
-        
-        .rating-stars {
-            font-size: 2.5rem;
-            color: #FFD700;
-            margin: 15px 0;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .rating-text {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .rating-actions {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-        
-        .rating-btn {
-            padding: 10px 20px;
-            border: 2px solid #FFD700;
-            background: transparent;
-            color: #B8860B;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .rating-btn:hover {
-            background: #FFD700;
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin: 20px 0;
-            padding: 12px 25px;
-            background: #8B4513;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-        
-        .back-link:hover {
-            background: #A0522D;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
-        }
-        
-        .recipe-story {
-            margin-top: 60px;
-            padding: 40px;
-            background: linear-gradient(135deg, #f8f8f8, #ffffff);
-            border-radius: 20px;
-            border-left: 5px solid #8B4513;
-            position: relative;
-        }
-        
-        .recipe-story::before {
-            content: '\f004';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            font-size: 2rem;
-            color: rgba(139, 69, 19, 0.2);
-        }
-        
-        .story-title {
-            font-family: 'Dancing Script', cursive;
-            font-size: 2rem;
-            color: #8B4513;
-            margin-bottom: 20px;
-        }
-        
-        .story-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #666;
-            margin-bottom: 15px;
-        }
-        
-        @media (max-width: 768px) {
-            .recipe-hero {
-                height: 50vh;
-            }
-            
-            .recipe-breadcrumb {
-                position: static;
-                transform: none;
-                margin: 20px auto;
-                width: fit-content;
-            }
-            
-            .recipe-meta {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-                padding: 20px;
-            }
-            
-            .recipe-actions {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .action-button {
-                width: 100%;
-                max-width: 250px;
-                justify-content: center;
-            }
-            
-            .ingredients-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .section-heading {
-                font-size: 1.8rem;
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/recipe.css">
 </head>
 <body>
-    <!-- Progress Bar -->
     <div class="progress-bar" id="progress-bar"></div>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-utensils logo-icon"></i>
-                <span class="logo-text">Golden Spoon Kitchen</span>
+                <a href="/index.html" class="logo-link">
+                    <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
+                </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#recipes" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
+                    <a href="/index.html#recipes" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
+                    <a href="/index.html#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#about" class="nav-link"><i class="fas fa-user-chef"></i> About</a>
+                    <a href="/index.html#about" class="nav-link"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                <path class="b" d="m21,10H7.65L3.91,1.59l-1.83.81,3.38,7.59h-2.46c-.55,0-1,.45-1,1,0,3.61,1.9,6.87,5,8.66v1.34c0,.55.45,1,1,1h8c.55,0,1-.45,1-1v-1.34c3.1-1.78,5-5.05,5-8.66,0-.55-.45-1-1-1Z"/>
+                <path class="b" d="M20 6A1 1 0 1 0 20 8 1 1 0 1 0 20 6z"/>
+                <path class="b" d="M9 2A1 1 0 1 0 9 4 1 1 0 1 0 9 2z"/>
+                <path class="b" d="M17.5 2A1.5 1.5 0 1 0 17.5 5 1.5 1.5 0 1 0 17.5 2z"/>
+                <path class="b" d="M13 4A2 2 0 1 0 13 8 2 2 0 1 0 13 4z"/>
+                </svg> About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="/index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
                 </li>
             </ul>
             <div class="nav-actions">
@@ -696,14 +148,13 @@
         </div>
     </nav>
 
-    <!-- Recipe Hero -->
-    <section class="recipe-hero">
+    <section class="recipe-hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/carbonara.jpg') center/cover;">
         <div class="recipe-breadcrumb">
-            <a href="index.html" class="breadcrumb-link">
+            <a href="/index.html" class="breadcrumb-link">
                 <i class="fas fa-home"></i> Home
             </a>
             <i class="fas fa-chevron-right" style="margin: 0 10px; color: #999;"></i>
-            <span>Classic Carbonara</span>
+            <span style="color: #8B4513;">Classic Carbonara</span>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">
@@ -713,10 +164,9 @@
         </div>
     </section>
 
-    <!-- Recipe Content -->
     <article class="recipe-content">
         <div class="recipe-header">
-            <a href="index.html" class="back-link">
+            <a href="/index.html" class="back-link">
                 <i class="fas fa-arrow-left"></i>
                 Back to Recipes
             </a>
@@ -924,47 +374,93 @@
         </section>
     </article>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <i class="fas fa-utensils logo-icon"></i>
-                        <span class="logo-text">Golden Spoon Kitchen</span>
+                       <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
                     </div>
                     <p class="footer-description">Bringing families together through the art of cooking, one recipe at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link pinterest" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4 class="footer-title">Quick Links</h4>
+                        <h4 class="footer-title">
+                            <i class="fas fa-book"></i>
+                            Recipes
+                        </h4>
                         <ul class="footer-list">
-                            <li><a href="index.html" class="footer-link">Home</a></li>
-                            <li><a href="index.html#recipes" class="footer-link">Recipes</a></li>
-                            <li><a href="index.html#stories" class="footer-link">Stories</a></li>
-                            <li><a href="index.html#about" class="footer-link">About</a></li>
+                            <li><a href="/index.html" class="footer-link">Appetizers</a></li>
+                            <li><a href="/index.html" class="footer-link">Main Courses</a></li>
+                            <li><a href="/index.html" class="footer-link">Desserts</a></li>
+                            <li><a href="/index.html" class="footer-link">Beverages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-tags"></i>
+                            Categories
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="/index.html" class="footer-link">Italian</a></li>
+                            <li><a href="/index.html" class="footer-link">Mediterranean</a></li>
+                            <li><a href="/index.html" class="footer-link">Comfort Food</a></li>
+                            <li><a href="/index.html" class="footer-link">Seasonal</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-headset"></i>
+                            Support
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="/contact.html" class="footer-link">Contact Us</a></li>
+                            <li><a href="/faq.html" class="footer-link">FAQ</a></li>
+                            <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="/terms.html" class="footer-link">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Golden Spoon Kitchen. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+                <p class="footer-copyright">© 2025 Golden Spoon Kitchen. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy.html" class="footer-bottom-link">Privacy</a>
+                    <a href="/terms.html" class="footer-bottom-link">Terms</a>
+                    <a href="/cookies.html" class="footer-bottom-link">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="main.js"></script>
     <script>
-        // Recipe-specific functionality
         function saveRecipe() {
-            // Add to favorites functionality
             const btn = event.target.closest('.btn-save');
             const icon = btn.querySelector('i');
             
@@ -973,8 +469,7 @@
                 icon.classList.add('far');
                 btn.innerHTML = '<i class="far fa-bookmark"></i> Recipe Saved!';
                 btn.style.background = '#28a745';
-                
-                // Show notification
+
                 showNotification('Recipe saved to your favorites!', 'success');
             }
         }
@@ -995,7 +490,6 @@
         }
 
         function shareToInstagram() {
-            // Instagram doesn't support direct URL sharing, so we copy to clipboard
             navigator.clipboard.writeText(window.location.href).then(() => {
                 showNotification('Recipe link copied! You can now paste it in your Instagram story or bio.', 'info');
             });
@@ -1068,14 +562,12 @@
             }, 3000);
         }
 
-        // Close share menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.share-dropdown')) {
                 document.querySelector('.share-dropdown').classList.remove('active');
             }
         });
 
-        // Ingredient checkbox functionality
         document.querySelectorAll('.ingredient-checkbox').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 const listItem = this.closest('li');
@@ -1089,5 +581,6 @@
             });
         });
     </script>
+    <script src="/main.js"></script>
 </body>
 </html>
