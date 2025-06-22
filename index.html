@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Spoon Kitchen - Traditional Recipes & Culinary Stories</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover timeless recipes and culinary stories at Golden Spoon Kitchen. Traditional cooking techniques, family recipes, and kitchen wisdom for passionate home cooks.">
+    <meta name="keywords" content="recipes, cooking, traditional cuisine, home cooking, culinary stories, kitchen tips, food blog">
+    <meta name="author" content="Golden Spoon Kitchen">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goldenspoonkitchen.com/">
+    <meta property="og:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
+    <meta property="og:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://goldenspoonkitchen.com/">
+    <meta property="twitter:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
+    <meta property="twitter:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
+    <meta property="twitter:image" content="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    
+    <!-- Structured Data for Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Golden Spoon Kitchen",
+        "url": "https://goldenspoonkitchen.com",
+        "description": "Traditional recipes and culinary stories for passionate home cooks",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Golden Spoon Kitchen"
+        }
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils logo-icon"></i>
+                <span class="logo-text">Golden Spoon Kitchen</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#recipes" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><i class="fas fa-user-chef"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Search recipes..." class="search-input" id="search-input">
+            <button class="search-close" id="search-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-slider">
+                <div class="slide active" style="background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+                <div class="slide" style="background-image: url('https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+                <div class="slide" style="background-image: url('https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=1920')"></div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text stagger-animation">
+                <h1 class="hero-title">
+                    <span class="title-main slide-in-left">Welcome to</span>
+                    <span class="title-script slide-in-right">Golden Spoon Kitchen</span>
+                </h1>
+                <p class="hero-subtitle fade-in-up" data-delay="800">Where timeless recipes meet modern kitchens. Discover the joy of traditional cooking with our carefully curated collection of family recipes and culinary stories.</p>
+                <div class="hero-buttons fade-in-up" data-delay="1200">
+                    <a href="#recipes" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i>
+                        Explore Recipes
+                    </a>
+                    <a href="#stories" class="btn btn-secondary">
+                        <i class="fas fa-heart"></i>
+                        Read Stories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="featured-recipes" id="recipes">
+        <div class="container">
+            <div class="section-header reveal-animation">
+                <h2 class="section-title">
+                    <span class="title-script">Featured Recipes</span>
+                    <div class="title-decoration">
+                        <span class="decoration-line"></span>
+                        <i class="fas fa-utensils decoration-icon"></i>
+                        <span class="decoration-line"></span>
+                    </div>
+                </h2>
+                <p class="section-subtitle">Handpicked recipes that bring families together around the dinner table</p>
+            </div>
+            
+            <div class="recipe-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-filter="italian">
+                    <i class="fas fa-pizza-slice"></i> Italian
+                </button>
+                <button class="filter-btn" data-filter="comfort">
+                    <i class="fas fa-heart"></i> Comfort Food
+                </button>
+                <button class="filter-btn" data-filter="dessert">
+                    <i class="fas fa-birthday-cake"></i> Desserts
+                </button>
+            </div>
+            
+            <div class="recipes-grid">
+                <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creamy Carbonara Pasta">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 25 min</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Easy</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8 (127 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Classic Carbonara</h3>
+                        <p class="card-description">A timeless Italian classic that brings the authentic flavors of Rome to your kitchen. Creamy, indulgent, and surprisingly simple.</p>
+                        <div class="card-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Pasta</span>
+                            <span class="tag">Quick</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Maria" class="author-avatar">
+                                <span class="card-author">By Chef Maria</span>
+                            </div>
+                            <span class="card-date">Dec 15, 2024</span>
+                        </div>
+                        <a href="/recipes/carbonara.html" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="comfort" data-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Homemade Bread">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 3 hours</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (89 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Grandmother's Sourdough</h3>
+                        <p class="card-description">The secret to perfect homemade bread, passed down through generations. Nothing beats the aroma of fresh bread in your kitchen.</p>
+                        <div class="card-tags">
+                            <span class="tag">Bread</span>
+                            <span class="tag">Traditional</span>
+                            <span class="tag">Homemade</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Antonio" class="author-avatar">
+                                <span class="card-author">By Chef Antonio</span>
+                            </div>
+                            <span class="card-date">Dec 12, 2024</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="comfort" data-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Comfort Soup">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 45 min</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Easy</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.7 (156 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Healing Chicken Soup</h3>
+                        <p class="card-description">More than just a recipe – it's a warm hug in a bowl. Perfect for cold days and caring for loved ones.</p>
+                        <div class="card-tags">
+                            <span class="tag">Soup</span>
+                            <span class="tag">Comfort</span>
+                            <span class="tag">Healthy</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Elena" class="author-avatar">
+                                <span class="card-author">By Chef Elena</span>
+                            </div>
+                            <span class="card-date">Dec 10, 2024</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="dessert" data-delay="400">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chocolate Cake">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 90 min</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (203 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Decadent Chocolate Cake</h3>
+                        <p class="card-description">Rich, moist, and absolutely irresistible. This chocolate cake recipe will become your go-to for every celebration.</p>
+                        <div class="card-tags">
+                            <span class="tag">Dessert</span>
+                            <span class="tag">Chocolate</span>
+                            <span class="tag">Celebration</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Sarah" class="author-avatar">
+                                <span class="card-author">By Chef Sarah</span>
+                            </div>
+                            <span class="card-date">Dec 8, 2024</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="italian" data-delay="500">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Margherita Pizza">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 45 min</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.6 (98 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Authentic Margherita Pizza</h3>
+                        <p class="card-description">Simple ingredients, extraordinary flavor. Master the art of pizza making with this authentic Neapolitan recipe.</p>
+                        <div class="card-tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Pizza</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Giuseppe" class="author-avatar">
+                                <span class="card-author">By Chef Giuseppe</span>
+                            </div>
+                            <span class="card-date">Dec 5, 2024</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="dessert" data-delay="600">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Apple Pie">
+                        <div class="card-overlay">
+                            <span class="recipe-time"><i class="fas fa-clock"></i> 2 hours</span>
+                            <span class="recipe-difficulty"><i class="fas fa-chef-hat"></i> Medium</span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="action-btn favorite-btn" title="Add to favorites">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="action-btn share-btn" title="Share recipe">
+                                <i class="fas fa-share-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8 (145 reviews)</span>
+                        </div>
+                        <h3 class="card-title">Classic Apple Pie</h3>
+                        <p class="card-description">Nothing says home like the aroma of a freshly baked apple pie. This recipe delivers perfect flaky crust every time.</p>
+                        <div class="card-tags">
+                            <span class="tag">Dessert</span>
+                            <span class="tag">Apple</span>
+                            <span class="tag">Traditional</span>
+                        </div>
+                        <div class="card-meta">
+                            <div class="author-info">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Chef Mary" class="author-avatar">
+                                <span class="card-author">By Chef Mary</span>
+                            </div>
+                            <span class="card-date">Dec 3, 2024</span>
+                        </div>
+                        <a href="#" class="card-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read Recipe
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories-section" id="stories">
+        <div class="container">
+            <div class="section-header reveal-animation">
+                <h2 class="section-title">
+                    <span class="title-script">Culinary Stories</span>
+                    <div class="title-decoration">
+                        <span class="decoration-line"></span>
+                        <i class="fas fa-book-heart decoration-icon"></i>
+                        <span class="decoration-line"></span>
+                    </div>
+                </h2>
+                <p class="section-subtitle">Every recipe has a story, every meal creates memories</p>
+            </div>
+            
+            <div class="stories-grid">
+                <article class="story-card slide-in-left">
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-category"><i class="fas fa-home"></i> Family Traditions</span>
+                            <span class="story-date">December 10, 2024</span>
+                        </div>
+                        <h3 class="story-title">The Art of Sunday Dinners</h3>
+                        <p class="story-excerpt">How one tradition brought three generations together every week, creating bonds that lasted a lifetime through the simple act of sharing a meal.</p>
+                        <div class="story-stats">
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                            <span><i class="fas fa-heart"></i> 234 likes</span>
+                        </div>
+                        <a href="#" class="story-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Family dinner">
+                    </div>
+                </article>
+
+                <article class="story-card slide-in-right">
+                    <div class="story-image">
+                        <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kitchen wisdom">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span class="story-category"><i class="fas fa-lightbulb"></i> Kitchen Wisdom</span>
+                            <span class="story-date">December 8, 2024</span>
+                        </div>
+                        <h3 class="story-title">Kitchen Wisdom from Nonna</h3>
+                        <p class="story-excerpt">Lessons learned not from cookbooks, but from watching weathered hands work magic with simple ingredients and boundless love.</p>
+                        <div class="story-stats">
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                            <span><i class="fas fa-heart"></i> 189 likes</span>
+                        </div>
+                        <a href="#" class="story-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Read More
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content reveal-animation">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="title-script">About Golden Spoon</span>
+                    </h2>
+                    <p class="about-description">
+                        Welcome to Golden Spoon Kitchen, where every recipe tells a story and every meal creates a memory. Our mission is to preserve the art of traditional cooking while making it accessible to modern kitchens.
+                    </p>
+                    <p class="about-description">
+                        Founded by passionate home cooks who believe that the best recipes are passed down through generations, we curate authentic dishes that have stood the test of time. Each recipe comes with its story, cooking tips, and the love that makes every dish special.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award feature-icon"></i>
+                            <span class="feature-text">Expert Tested</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart feature-icon"></i>
+                            <span class="feature-text">Family Approved</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy feature-icon"></i>
+                            <span class="feature-text">Time-Tested</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cooking with love">
+                    <div class="image-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="overlay-text">Watch Our Story</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content reveal-animation">
+                <h2 class="newsletter-title">
+                    <span class="title-script">Stay Connected</span>
+                </h2>
+                <p class="newsletter-subtitle">Get weekly recipes and cooking tips delivered to your inbox</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="input-group">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                    </div>
+                    <button type="submit" class="newsletter-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Subscribe
+                    </button>
+                </form>
+                <div class="newsletter-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-utensils"></i>
+                        <span>Weekly Recipes</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Cooking Tips</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-gift"></i>
+                        <span>Exclusive Content</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils logo-icon"></i>
+                        <span class="logo-text">Golden Spoon Kitchen</span>
+                    </div>
+                    <p class="footer-description">Bringing families together through the art of cooking, one recipe at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link pinterest" aria-label="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="social-link youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-book"></i>
+                            Recipes
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Appetizers</a></li>
+                            <li><a href="#" class="footer-link">Main Courses</a></li>
+                            <li><a href="#" class="footer-link">Desserts</a></li>
+                            <li><a href="#" class="footer-link">Beverages</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-tags"></i>
+                            Categories
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Italian</a></li>
+                            <li><a href="#" class="footer-link">Mediterranean</a></li>
+                            <li><a href="#" class="footer-link">Comfort Food</a></li>
+                            <li><a href="#" class="footer-link">Seasonal</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-headset"></i>
+                            Support
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Contact Us</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Golden Spoon Kitchen. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy</a>
+                    <a href="#" class="footer-bottom-link">Terms</a>
+                    <a href="#" class="footer-bottom-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>

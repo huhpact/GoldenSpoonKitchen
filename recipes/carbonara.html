@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Carbonara Recipe - Golden Spoon Kitchen</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple - perfect for any night of the week.">
+    <meta name="keywords" content="carbonara recipe, Italian pasta, authentic carbonara, pasta recipes, Italian cooking, easy dinner recipes">
+    <meta name="author" content="Golden Spoon Kitchen">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://goldenspoonkitchen.com/carbonara-recipe.html">
+    <meta property="og:title" content="Classic Carbonara Recipe - Golden Spoon Kitchen">
+    <meta property="og:description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple.">
+    <meta property="og:image" content="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://goldenspoonkitchen.com/carbonara-recipe.html">
+    <meta property="twitter:title" content="Classic Carbonara Recipe - Golden Spoon Kitchen">
+    <meta property="twitter:description" content="Learn how to make authentic Italian Carbonara with our step-by-step recipe. Creamy, delicious, and surprisingly simple.">
+    <meta property="twitter:image" content="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    
+    <!-- Recipe Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": "Classic Carbonara",
+        "image": [
+            "https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=800"
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Chef Maria"
+        },
+        "datePublished": "2024-12-15",
+        "description": "A timeless Italian classic that brings the authentic flavors of Rome to your kitchen. Creamy, indulgent, and surprisingly simple.",
+        "prepTime": "PT10M",
+        "cookTime": "PT15M",
+        "totalTime": "PT25M",
+        "keywords": "carbonara, Italian, pasta, easy, dinner",
+        "recipeYield": "4 servings",
+        "recipeCategory": "Main Course",
+        "recipeCuisine": "Italian",
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "520 calories"
+        },
+        "recipeIngredient": [
+            "400g spaghetti or linguine",
+            "200g guanciale or pancetta, diced",
+            "4 large eggs",
+            "100g Pecorino Romano cheese, finely grated",
+            "50g Parmigiano-Reggiano cheese, finely grated",
+            "Freshly ground black pepper",
+            "Salt for pasta water"
+        ],
+        "recipeInstructions": [
+            {
+                "@type": "HowToStep",
+                "name": "Prepare the ingredients",
+                "text": "Bring a large pot of salted water to boil. In a large bowl, whisk together eggs, Pecorino Romano, and Parmigiano-Reggiano. Add plenty of freshly ground black pepper."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Cook the guanciale",
+                "text": "In a large skillet, cook diced guanciale over medium heat until crispy and golden, about 5-7 minutes. Remove from heat but keep the rendered fat in the pan."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Cook the pasta",
+                "text": "Cook pasta according to package directions until al dente. Reserve 1 cup of pasta cooking water before draining."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Combine everything",
+                "text": "Add hot drained pasta to the skillet with guanciale. Toss quickly, then remove from heat. Gradually add the egg mixture while tossing constantly. Add pasta water as needed to create a creamy sauce."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Serve immediately",
+                "text": "Serve immediately with additional cheese and black pepper. The residual heat will cook the eggs to create a silky, creamy sauce."
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+        }
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* Recipe-specific styles */
+        .recipe-hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .recipe-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(139, 69, 19, 0.3), rgba(0, 0, 0, 0.5));
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        
+        .recipe-breadcrumb {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .breadcrumb-link {
+            color: #8B4513;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumb-link:hover {
+            text-decoration: underline;
+        }
+        
+        .recipe-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .recipe-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .meta-item {
+            text-align: center;
+            padding: 15px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .meta-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .meta-icon {
+            font-size: 1.5rem;
+            color: #8B4513;
+            margin-bottom: 8px;
+        }
+        
+        .meta-label {
+            font-weight: 600;
+            color: #8B4513;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .meta-value {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .recipe-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .action-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .btn-save {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-save:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        
+        .btn-print {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-print:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+        
+        .btn-share {
+            background: #007bff;
+            color: white;
+        }
+        
+        .btn-share:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+        
+        .share-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .share-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .share-dropdown.active .share-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(10px);
+        }
+        
+        .share-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: background 0.3s ease;
+            margin-bottom: 5px;
+        }
+        
+        .share-option:hover {
+            background: #f8f9fa;
+        }
+        
+        .share-option.facebook { color: #1877f2; }
+        .share-option.instagram { color: #e4405f; }
+        .share-option.pinterest { color: #bd081c; }
+        .share-option.twitter { color: #1da1f2; }
+        .share-option.whatsapp { color: #25d366; }
+        
+        .ingredients-section,
+        .instructions-section {
+            margin: 50px 0;
+        }
+        
+        .section-heading {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #8B4513;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #8B4513;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section-icon {
+            font-size: 1.8rem;
+        }
+        
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 25px;
+        }
+        
+        .ingredients-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .ingredients-list li:hover {
+            background: rgba(139, 69, 19, 0.05);
+            border-radius: 8px;
+            margin: 0 -10px;
+            padding-left: 50px;
+        }
+        
+        .ingredients-list li:before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: #8B4513;
+            border-radius: 50%;
+        }
+        
+        .ingredient-checkbox {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        
+        .instructions-list {
+            counter-reset: step-counter;
+        }
+        
+        .instruction-step {
+            counter-increment: step-counter;
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f9f9f9, #ffffff);
+            border-radius: 15px;
+            border-left: 5px solid #8B4513;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .instruction-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+        
+        .instruction-step:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -20px;
+            top: 20px;
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+        }
+        
+        .step-title {
+            font-weight: 600;
+            color: #8B4513;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        
+        .step-description {
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .nutrition-info {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nutrition-info::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .nutrition-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .tips-section {
+            background: linear-gradient(135deg, #f0f8f0, #e8f5e8);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            border: 2px solid #4CAF50;
+            position: relative;
+        }
+        
+        .tips-section::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: 'Font Awesome 6 Free';
+            content: '\f0eb';
+            font-weight: 900;
+            font-size: 3rem;
+            color: rgba(76, 175, 80, 0.2);
+        }
+        
+        .tips-section h3 {
+            color: #2E7D32;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tips-list li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .tips-list li::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-size: 1.1rem;
+        }
+        
+        .rating-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            border-radius: 20px;
+            border: 2px solid #FFD700;
+        }
+        
+        .rating-stars {
+            font-size: 2.5rem;
+            color: #FFD700;
+            margin: 15px 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rating-text {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .rating-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .rating-btn {
+            padding: 10px 20px;
+            border: 2px solid #FFD700;
+            background: transparent;
+            color: #B8860B;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .rating-btn:hover {
+            background: #FFD700;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background: #8B4513;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            background: #A0522D;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+        }
+        
+        .recipe-story {
+            margin-top: 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            border-radius: 20px;
+            border-left: 5px solid #8B4513;
+            position: relative;
+        }
+        
+        .recipe-story::before {
+            content: '\f004';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: rgba(139, 69, 19, 0.2);
+        }
+        
+        .story-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #8B4513;
+            margin-bottom: 20px;
+        }
+        
+        .story-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .recipe-hero {
+                height: 50vh;
+            }
+            
+            .recipe-breadcrumb {
+                position: static;
+                transform: none;
+                margin: 20px auto;
+                width: fit-content;
+            }
+            
+            .recipe-meta {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                padding: 20px;
+            }
+            
+            .recipe-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .action-button {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+            
+            .ingredients-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-heading {
+                font-size: 1.8rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils logo-icon"></i>
+                <span class="logo-text">Golden Spoon Kitchen</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#recipes" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link"><i class="fas fa-user-chef"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recipe Hero -->
+    <section class="recipe-hero">
+        <div class="recipe-breadcrumb">
+            <a href="index.html" class="breadcrumb-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <i class="fas fa-chevron-right" style="margin: 0 10px; color: #999;"></i>
+            <span>Classic Carbonara</span>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-script">Classic Carbonara</span>
+            </h1>
+            <p class="hero-subtitle">A timeless Italian classic from the heart of Rome</p>
+        </div>
+    </section>
+
+    <!-- Recipe Content -->
+    <article class="recipe-content">
+        <div class="recipe-header">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Recipes
+            </a>
+        </div>
+        
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <i class="fas fa-clock meta-icon"></i>
+                <span class="meta-label">Prep Time</span>
+                <span class="meta-value">10 minutes</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-fire meta-icon"></i>
+                <span class="meta-label">Cook Time</span>
+                <span class="meta-value">15 minutes</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-hourglass-half meta-icon"></i>
+                <span class="meta-label">Total Time</span>
+                <span class="meta-value">25 minutes</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-users meta-icon"></i>
+                <span class="meta-label">Servings</span>
+                <span class="meta-value">4 people</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-chart-line meta-icon"></i>
+                <span class="meta-label">Difficulty</span>
+                <span class="meta-value">Easy</span>
+            </div>
+        </div>
+
+        <div class="recipe-actions">
+            <button class="action-button btn-save" onclick="saveRecipe()">
+                <i class="fas fa-bookmark"></i>
+                Save Recipe
+            </button>
+            <button class="action-button btn-print" onclick="printRecipe()">
+                <i class="fas fa-print"></i>
+                Print Recipe
+            </button>
+            <div class="share-dropdown">
+                <button class="action-button btn-share" onclick="toggleShareMenu()">
+                    <i class="fas fa-share-alt"></i>
+                    Share Recipe
+                </button>
+                <div class="share-menu" id="share-menu">
+                    <a href="#" class="share-option facebook" onclick="shareToFacebook()">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </a>
+                    <a href="#" class="share-option instagram" onclick="shareToInstagram()">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="#" class="share-option pinterest" onclick="shareToPinterest()">
+                        <i class="fab fa-pinterest-p"></i>
+                        Pinterest
+                    </a>
+                    <a href="#" class="share-option twitter" onclick="shareToTwitter()">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="#" class="share-option whatsapp" onclick="shareToWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rating-section">
+            <h3>Recipe Rating</h3>
+            <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p class="rating-text">4.8/5 based on 127 reviews</p>
+            <div class="rating-actions">
+                <button class="rating-btn" onclick="rateRecipe()">
+                    <i class="fas fa-star"></i>
+                    Rate This Recipe
+                </button>
+                <button class="rating-btn" onclick="addReview()">
+                    <i class="fas fa-comment"></i>
+                    Write Review
+                </button>
+            </div>
+        </div>
+
+        <section class="ingredients-section">
+            <h2 class="section-heading">
+                <i class="fas fa-list-ul section-icon"></i>
+                Ingredients
+            </h2>
+            <div class="ingredients-grid">
+                <ul class="ingredients-list">
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        400g spaghetti or linguine
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        200g guanciale or pancetta, diced
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        4 large eggs
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        100g Pecorino Romano cheese, finely grated
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        50g Parmigiano-Reggiano cheese, finely grated
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        Freshly ground black pepper
+                    </li>
+                    <li>
+                        <input type="checkbox" class="ingredient-checkbox">
+                        Salt for pasta water
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="instructions-section">
+            <h2 class="section-heading">
+                <i class="fas fa-tasks section-icon"></i>
+                Instructions
+            </h2>
+            <div class="instructions-list">
+                <div class="instruction-step">
+                    <div class="step-title">Prepare the base</div>
+                    <p class="step-description">Bring a large pot of salted water to boil. In a large bowl, whisk together eggs, Pecorino Romano, and Parmigiano-Reggiano. Add plenty of freshly ground black pepper. This mixture will create the creamy sauce.</p>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-title">Cook the guanciale</div>
+                    <p class="step-description">In a large skillet, cook diced guanciale over medium heat until crispy and golden, about 5-7 minutes. The fat should render beautifully. Remove from heat but keep the rendered fat in the pan - this is liquid gold!</p>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-title">Cook the pasta</div>
+                    <p class="step-description">Cook pasta according to package directions until al dente. Reserve 1 cup of pasta cooking water before draining. This starchy water is crucial for creating the perfect sauce consistency.</p>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-title">The magic moment</div>
+                    <p class="step-description">Add hot drained pasta to the skillet with guanciale. Toss quickly, then remove from heat. Gradually add the egg mixture while tossing constantly. The key is to work quickly to prevent the eggs from scrambling!</p>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-title">Perfect the sauce</div>
+                    <p class="step-description">Add pasta water gradually while tossing until you achieve a silky, creamy sauce that coats each strand of pasta. The sauce should be glossy and smooth, not thick or clumpy.</p>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-title">Serve with love</div>
+                    <p class="step-description">Serve immediately with additional cheese and black pepper. The residual heat will continue to cook the eggs gently, creating that perfect carbonara texture. Buon appetito!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="nutrition-info">
+            <div class="nutrition-content">
+                <h3 style="margin-bottom: 15px; font-family: 'Dancing Script', cursive; font-size: 2rem;">
+                    <i class="fas fa-apple-alt" style="margin-right: 10px;"></i>
+                    Nutrition Information
+                </h3>
+                <p><strong>Per Serving:</strong> Approximately 520 calories</p>
+                <p>Rich in protein from eggs and cheese, providing sustained energy and satisfaction</p>
+            </div>
+        </div>
+
+        <div class="tips-section">
+            <h3>
+                <i class="fas fa-lightbulb"></i>
+                Chef's Tips for Perfect Carbonara
+            </h3>
+            <ul class="tips-list">
+                <li><strong>Temperature is key:</strong> Remove the pan from heat before adding the egg mixture to prevent scrambling.</li>
+                <li><strong>Quality ingredients:</strong> Use authentic Pecorino Romano and Parmigiano-Reggiano for the best flavor.</li>
+                <li><strong>Pasta water magic:</strong> The starchy pasta water helps emulsify the sauce to silky perfection.</li>
+                <li><strong>Timing matters:</strong> Work quickly and serve immediately for the best texture and temperature.</li>
+                <li><strong>Authentic touch:</strong> If you can find guanciale (cured pork jowl), it's worth the extra effort over pancetta.</li>
+            </ul>
+        </div>
+
+        <section class="recipe-story">
+            <h3 class="story-title">The Story Behind This Recipe</h3>
+            <p class="story-text">
+                This carbonara recipe comes from my dear friend Maria, who learned it from her nonna in a tiny trattoria in Trastevere, Rome. The secret, she always said, wasn't just in the technique—it was in the love and patience you put into every step. Maria would tell me that carbonara isn't just a dish; it's a lesson in simplicity and timing, where a few humble ingredients transform into something magical when treated with respect.
+            </p>
+            <p class="story-text">
+                Every time I make this dish, I remember her words: "Cook with your heart, not just your hands." The gentle whisking, the careful timing, the moment when the sauce comes together—it's almost meditative. This is more than dinner; it's a celebration of tradition and the simple pleasures that bring us together around the table.
+            </p>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils logo-icon"></i>
+                        <span class="logo-text">Golden Spoon Kitchen</span>
+                    </div>
+                    <p class="footer-description">Bringing families together through the art of cooking, one recipe at a time.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link">Home</a></li>
+                            <li><a href="index.html#recipes" class="footer-link">Recipes</a></li>
+                            <li><a href="index.html#stories" class="footer-link">Stories</a></li>
+                            <li><a href="index.html#about" class="footer-link">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Golden Spoon Kitchen. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script>
+        // Recipe-specific functionality
+        function saveRecipe() {
+            // Add to favorites functionality
+            const btn = event.target.closest('.btn-save');
+            const icon = btn.querySelector('i');
+            
+            if (icon.classList.contains('fas')) {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                btn.innerHTML = '<i class="far fa-bookmark"></i> Recipe Saved!';
+                btn.style.background = '#28a745';
+                
+                // Show notification
+                showNotification('Recipe saved to your favorites!', 'success');
+            }
+        }
+
+        function printRecipe() {
+            window.print();
+        }
+
+        function toggleShareMenu() {
+            const dropdown = document.querySelector('.share-dropdown');
+            dropdown.classList.toggle('active');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent('Classic Carbonara Recipe - Golden Spoon Kitchen');
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=400');
+        }
+
+        function shareToInstagram() {
+            // Instagram doesn't support direct URL sharing, so we copy to clipboard
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                showNotification('Recipe link copied! You can now paste it in your Instagram story or bio.', 'info');
+            });
+        }
+
+        function shareToPinterest() {
+            const url = encodeURIComponent(window.location.href);
+            const description = encodeURIComponent('Classic Carbonara Recipe - A timeless Italian classic');
+            const media = encodeURIComponent('https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg');
+            window.open(`https://pinterest.com/pin/create/button/?url=${url}&description=${description}&media=${media}`, '_blank', 'width=600,height=400');
+        }
+
+        function shareToTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('Check out this amazing Classic Carbonara recipe!');
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
+        }
+
+        function shareToWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent('Check out this delicious Classic Carbonara recipe: ');
+            window.open(`https://wa.me/?text=${text}${url}`, '_blank');
+        }
+
+        function rateRecipe() {
+            showNotification('Rating feature coming soon!', 'info');
+        }
+
+        function addReview() {
+            showNotification('Review feature coming soon!', 'info');
+        }
+
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+                ${message}
+            `;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: ${type === 'success' ? '#28a745' : type === 'error' ? '#dc3545' : '#007bff'};
+                color: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-weight: 500;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Close share menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.share-dropdown')) {
+                document.querySelector('.share-dropdown').classList.remove('active');
+            }
+        });
+
+        // Ingredient checkbox functionality
+        document.querySelectorAll('.ingredient-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const listItem = this.closest('li');
+                if (this.checked) {
+                    listItem.style.opacity = '0.6';
+                    listItem.style.textDecoration = 'line-through';
+                } else {
+                    listItem.style.opacity = '1';
+                    listItem.style.textDecoration = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
