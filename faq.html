@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Golden Spoon Kitchen</title>
+    <meta name="description" content="Frequently asked questions about Golden Spoon Kitchen, our recipes, and cooking tips.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .page-hero {
+            height: 40vh;
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+        }
+        .page-hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .page-hero-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+        }
+        .faq-section {
+            padding: 80px 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+        .faq-question:hover {
+            background: #f8f8f8;
+        }
+        .faq-question h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8B4513;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .faq-icon {
+            font-size: 1.5rem;
+            color: #8B4513;
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .faq-answer-content {
+            padding: 0 30px 25px;
+            color: #666;
+            line-height: 1.8;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-categories {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .faq-category-btn {
+            padding: 12px 24px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            color: #666;
+        }
+        .faq-category-btn.active,
+        .faq-category-btn:hover {
+            background: #8B4513;
+            color: white;
+            border-color: #8B4513;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/templates/index.html" class="logo-link">
+                    <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/recipes.html" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index.html#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/index.html#about" class="nav-link"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="m21,10H7.65L3.91,1.59l-1.83.81,3.38,7.59h-2.46c-.55,0-1,.45-1,1,0,3.61,1.9,6.87,5,8.66v1.34c0,.55.45,1,1,1h8c.55,0,1-.45,1-1v-1.34c3.1-1.78,5-5.05,5-8.66,0-.55-.45-1-1-1Z"/>
+                    </svg> About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">Frequently Asked Questions</h1>
+            <p style="font-size: 1.2rem; opacity: 0.95;">Find answers to common questions</p>
+        </div>
+    </section>
+
+    <section class="faq-section container">
+        <div class="faq-categories">
+            <button class="faq-category-btn active" data-category="all">All Questions</button>
+            <button class="faq-category-btn" data-category="recipes">Recipes</button>
+            <button class="faq-category-btn" data-category="cooking">Cooking Tips</button>
+            <button class="faq-category-btn" data-category="website">Website</button>
+        </div>
+
+        <div class="faq-item" data-category="recipes">
+            <div class="faq-question">
+                <h3>Are your recipes tested?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Yes! Every recipe on Golden Spoon Kitchen is thoroughly tested multiple times before publication. We test recipes in home kitchens with standard equipment to ensure they work for everyday cooks. Many of our recipes have also been passed down through generations and refined over decades of family cooking.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="recipes">
+            <div class="faq-question">
+                <h3>Can I substitute ingredients in your recipes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Absolutely! Cooking is about adaptation and personal taste. While we provide specific ingredients for best results, we encourage you to make substitutions based on your dietary needs, preferences, or what's available in your kitchen. For critical substitutions (like in baking), we try to note alternatives in the recipe.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="recipes">
+            <div class="faq-question">
+                <h3>How can I adjust recipes for different serving sizes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Most of our recipes can be easily scaled up or down by multiplying or dividing all ingredients proportionally. Keep in mind that cooking times may need adjustment, especially for baking. When doubling recipes, you may not need to double seasonings—taste and adjust as you go.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="cooking">
+            <div class="faq-question">
+                <h3>What kitchen equipment do I need to make your recipes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Our recipes are designed for home cooks with standard kitchen equipment. You'll typically need basic items like pots, pans, mixing bowls, and standard utensils. If a recipe requires special equipment, we mention it clearly in the recipe introduction and often suggest alternatives.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="cooking">
+            <div class="faq-question">
+                <h3>My dish didn't turn out right. What should I do?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Don't worry! Cooking is a learning process. If something didn't work, consider these common issues: oven temperature accuracy, ingredient freshness, timing, and technique. Feel free to contact us with specific questions—we're happy to help troubleshoot. Remember, even experienced cooks have kitchen mishaps!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="cooking">
+            <div class="faq-question">
+                <h3>How should I store leftovers?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Storage instructions vary by recipe, but as a general rule: store in airtight containers, refrigerate within 2 hours of cooking, and consume within 3-4 days. Many dishes can be frozen for longer storage. We include specific storage guidelines in recipes where it's particularly important.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="recipes">
+            <div class="faq-question">
+                <h3>Do you accommodate dietary restrictions?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>While our focus is on traditional recipes, we understand the importance of dietary accommodations. We tag recipes with relevant dietary information (vegetarian, gluten-free options, dairy-free options) when applicable. We're always working to expand our collection to include more diverse dietary options.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="website">
+            <div class="faq-question">
+                <h3>How do I save my favorite recipes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>You can bookmark recipes in your web browser for quick access later. We're currently working on a member feature that will allow you to create a personal recipe collection. Stay tuned for updates!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="website">
+            <div class="faq-question">
+                <h3>Can I print your recipes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Yes! All our recipes can be printed. Use your browser's print function for a clean, printer-friendly version. We're working on adding a dedicated print button to make this even easier.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="website">
+            <div class="faq-question">
+                <h3>How can I share recipes with friends and family?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Simply copy the recipe URL from your browser and share it via email, text, or social media. Each recipe has its own unique link that makes sharing easy. We love when families and friends share our recipes with each other!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="website">
+            <div class="faq-question">
+                <h3>Do you have a newsletter?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Yes! Subscribe to our newsletter to receive weekly recipes, cooking tips, and culinary stories delivered directly to your inbox. You can sign up using the form on our homepage. We respect your privacy and never share your email address with third parties.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="website">
+            <div class="faq-question">
+                <h3>Can I submit my own family recipes?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>We love hearing about family recipes and their stories! While we don't currently have a formal submission process, please feel free to share your recipes and stories through our contact form. We read every submission and may feature selected recipes in the future.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="recipes">
+            <div class="faq-question">
+                <h3>Where do your recipes come from?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Our recipes are a collection of family traditions passed down through generations, tested and adapted for modern kitchens. Many come from our founders' families, while others are traditional recipes we've researched and perfected. Each recipe includes its story and cultural context when relevant.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item" data-category="cooking">
+            <div class="faq-question">
+                <h3>I'm a beginner cook. Are your recipes suitable for me?</h3>
+                <i class="fas fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Absolutely! We label each recipe with a difficulty level (Easy, Medium, Advanced) to help you choose. We also provide detailed instructions and tips to guide you through each step. Don't be intimidated—every experienced cook started as a beginner. Start with "Easy" recipes and work your way up as you gain confidence!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section" style="margin-top: 60px;">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">
+                    <span class="title-script" style="color: #fefefe;">Still Have Questions?</span>
+                </h2>
+                <p class="newsletter-subtitle">Contact us directly and we'll be happy to help</p>
+                <a href="/contact.html" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 10px; margin-top: 20px;">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Bringing families together through the art of cooking, one recipe at a time.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61584148233648" class="social-link facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.pinterest.com/goldenspoonkitchen/" class="social-link pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://x.com/goldenspoonk" class="social-link twitter" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-book"></i>
+                            Content
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="/recipes.html" class="footer-link">Recipes</a></li>
+                            <li><a href="/index.html#stories" class="footer-link">Stories</a></li>
+                            <li><a href="/index.html#about" class="footer-link">About</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-headset"></i>
+                            Support
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="/contact.html" class="footer-link">Contact Us</a></li>
+                            <li><a href="/faq.html" class="footer-link">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">
+                            <i class="fas fa-shield-alt"></i>
+                            Legal
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="/terms.html" class="footer-link">Terms of Service</a></li>
+                            <li><a href="/cookies.html" class="footer-link">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Golden Spoon Kitchen. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/main.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        document.querySelectorAll('.faq-category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.faq-category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,94 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TWS8WHMK6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-7TWS8WHMK6');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Spoon Kitchen - Traditional Recipes & Culinary Stories</title>
-    <meta name="description" content="Discover timeless recipes and culinary stories at Golden Spoon Kitchen. Traditional cooking techniques, family recipes, and kitchen wisdom for passionate home cooks.">
-    <meta name="keywords" content="recipes, cooking, traditional cuisine, home cooking, culinary stories, kitchen tips, food blog">
-    <meta name="author" content="Golden Spoon Kitchen">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://goldenspoonkitchen.com/">
-    <meta property="og:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
-    <meta property="og:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
-    <meta property="og:image" content="/images/thumb.png">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://goldenspoonkitchen.com/">
-    <meta property="twitter:title" content="Golden Spoon Kitchen - Traditional Recipes & Culinary Stories">
-    <meta property="twitter:description" content="Discover timeless recipes and culinary stories. Traditional cooking techniques and kitchen wisdom for passionate home cooks.">
-    <meta property="twitter:image" content="/images/thumb.png">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2572135815183857" crossorigin="anonymous"></script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Golden Spoon Kitchen",
-        "url": "https://goldenspoonkitchen.com",
-        "description": "Traditional recipes and culinary stories for passionate home cooks",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Golden Spoon Kitchen"
-        }
-    }
-    </script>
+    <title>All Recipes - Golden Spoon Kitchen</title>
+    <meta name="description" content="Browse all recipes from Golden Spoon Kitchen. Traditional family recipes, cooking tips, and culinary inspiration.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-    <link rel="manifest" href="/images/site.webmanifest" />
-    <link rel="icon" href="/images/favicon.ico" />
+    <style>
+        .page-hero {
+            height: 50vh;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(160, 82, 45, 0.9)), url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+        .page-hero-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+        }
+        .recipes-page-section {
+            padding: 80px 0;
+        }
+        .search-filter-bar {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 18px 60px 18px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: border-color 0.3s ease;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: #8B4513;
+        }
+        .search-box-icon {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8B4513;
+            font-size: 1.3rem;
+        }
+        .filter-section {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .results-count {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .results-count strong {
+            color: #8B4513;
+            font-weight: 600;
+        }
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .no-results i {
+            font-size: 4rem;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+        .no-results h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .no-results p {
+            color: #999;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <body>
     <div class="progress-bar" id="progress-bar"></div>
 
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-           <div class="nav-logo">
+            <div class="nav-logo">
                 <a href="/index.html" class="logo-link">
                     <img src="/images/logo.png" alt="Golden Spoon Kitchen Logo" class="logo-img">
                 </a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="/recipes.html" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
+                    <a href="/index.html#stories" class="nav-link"><i class="fas fa-heart"></i> Stories</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-                <path class="b" d="m21,10H7.65L3.91,1.59l-1.83.81,3.38,7.59h-2.46c-.55,0-1,.45-1,1,0,3.61,1.9,6.87,5,8.66v1.34c0,.55.45,1,1,1h8c.55,0,1-.45,1-1v-1.34c3.1-1.78,5-5.05,5-8.66,0-.55-.45-1-1-1Z"/>
-                <path class="b" d="M20 6A1 1 0 1 0 20 8 1 1 0 1 0 20 6z"/>
-                <path class="b" d="M9 2A1 1 0 1 0 9 4 1 1 0 1 0 9 2z"/>
-                <path class="b" d="M17.5 2A1.5 1.5 0 1 0 17.5 5 1.5 1.5 0 1 0 17.5 2z"/>
-                <path class="b" d="M13 4A2 2 0 1 0 13 8 2 2 0 1 0 13 4z"/>
-                </svg> About</a>
+                    <a href="/index.html#about" class="nav-link"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="m21,10H7.65L3.91,1.59l-1.83.81,3.38,7.59h-2.46c-.55,0-1,.45-1,1,0,3.61,1.9,6.87,5,8.66v1.34c0,.55.45,1,1,1h8c.55,0,1-.45,1-1v-1.34c3.1-1.78,5-5.05,5-8.66,0-.55-.45-1-1-1Z"/>
+                    </svg> About</a>
                 </li>
                 <li class="nav-item">
                     <a href="/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <button class="search-btn" id="search-btn">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -97,89 +143,54 @@
         </div>
     </nav>
 
-    <div class="search-overlay" id="search-overlay">
-        <div class="search-container">
-            <input type="text" placeholder="Search recipes..." class="search-input" id="search-input">
-            <button class="search-close" id="search-close">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
-    <section class="hero" id="home">
-        <div class="hero-background">
-            <div class="hero-slider">
-                <div class="slide active" style="background-image: url('/images/hero1.png')"></div>
-                <div class="slide" style="background-image: url('/images/hero2.png')"></div>
-                <div class="slide" style="background-image: url('/images/hero3.png')"></div>
-            </div>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text stagger-animation">
-                <h1 class="hero-title">
-                    <span class="title-main slide-in-left">Welcome to</span>
-                    <span class="title-script slide-in-right">Golden Spoon Kitchen</span>
-                </h1>
-                <p class="hero-subtitle fade-in-up" data-delay="800">Where timeless recipes meet modern kitchens. Discover the joy of traditional cooking with our carefully curated collection of family recipes and culinary stories.</p>
-                <div class="hero-buttons fade-in-up" data-delay="1200">
-                    <a href="#recipes" class="btn btn-primary">
-                        <i class="fas fa-book-open"></i>
-                        Explore Recipes
-                    </a>
-                    <a href="#stories" class="btn btn-secondary">
-                        <i class="fas fa-heart"></i>
-                        Read Stories
-                    </a>
-                </div>
-            </div>
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">All Recipes</h1>
+            <p style="font-size: 1.2rem; opacity: 0.95;">Discover our complete collection of traditional family recipes</p>
         </div>
     </section>
 
-    <section class="featured-recipes" id="recipes">
+    <section class="recipes-page-section">
         <div class="container">
-            <div class="section-header reveal-animation">
-                <h2 class="section-title">
-                    <span class="title-script">Featured Recipes</span>
-                    <div class="title-decoration">
-                        <span class="decoration-line"></span>
-                        <i class="fas fa-utensils decoration-icon"></i>
-                        <span class="decoration-line"></span>
-                    </div>
-                </h2>
-                <p class="section-subtitle">Handpicked recipes that bring families together around the dinner table</p>
-            </div>
-            
-            <div class="recipe-filters">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i> All
-                </button>
-                <button class="filter-btn" data-filter="italian">
-                    <i class="fas fa-pizza-slice"></i> Italian
-                </button>
-                <button class="filter-btn" data-filter="comfort">
-                    <i class="fas fa-heart"></i> Comfort Food
-                </button>
-                <button class="filter-btn" data-filter="dessert">
-                    <i class="fas fa-birthday-cake"></i> Desserts
-                </button>
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <input type="text" id="recipe-search" placeholder="Search recipes by name, ingredient, or cuisine...">
+                    <i class="fas fa-search search-box-icon"></i>
+                </div>
+
+                <div class="filter-section">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> All
+                    </button>
+                    <button class="filter-btn" data-filter="italian">
+                        <i class="fas fa-pizza-slice"></i> Italian
+                    </button>
+                    <button class="filter-btn" data-filter="comfort">
+                        <i class="fas fa-heart"></i> Comfort Food
+                    </button>
+                    <button class="filter-btn" data-filter="dessert">
+                        <i class="fas fa-birthday-cake"></i> Desserts
+                    </button>
+                    <button class="filter-btn" data-filter="healthy">
+                        <i class="fas fa-leaf"></i> Healthy
+                    </button>
+                    <button class="filter-btn" data-filter="quick">
+                        <i class="fas fa-clock"></i> Quick & Easy
+                    </button>
+                </div>
             </div>
 
-            <div style="text-align: center; margin-bottom: 40px;">
-                <a href="/recipes.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 10px;">
-                    <i class="fas fa-th-large"></i>
-                    View All Recipes
-                </a>
+            <div class="results-count" id="results-count">
+                Showing <strong id="recipe-count">8</strong> recipes
             </div>
-            
-            <div class="recipes-grid">
 
-                 <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+            <div class="recipes-grid" id="recipes-grid">
+                <article class="recipe-card card-hover-effect" data-category="italian comfort" data-name="Creamy Mushroom Truffle Risotto" data-tags="italian truffle mushroom risotto">
                     <div class="card-image">
-                        <img src="/images/Truffled-Mushroom-Risotto.webp" alt="Truffeled Mushroom Risotto">
+                        <img src="/images/Truffled-Mushroom-Risotto.webp" alt="Truffled Mushroom Risotto">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 40 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -213,8 +224,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -226,13 +236,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>  
-                 <article class="recipe-card card-hover-effect" data-category="none" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="healthy quick" data-name="Quinoa Avocado Power Bowl" data-tags="healthy quinoa avocado salad bowl">
                     <div class="card-image">
-                        <img src="/images/quinoa-avocado-power-bowl.jpg" alt="quinoa-avocado-power-bowl">
+                        <img src="/images/quinoa-avocado-power-bowl.jpg" alt="Quinoa Avocado Power Bowl">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 40 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -266,8 +277,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -279,13 +289,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>  
-                 <article class="recipe-card card-hover-effect" data-category="desserts" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="dessert comfort" data-name="Chocolate Raspberry Opera Cake" data-tags="dessert chocolate raspberry cake french">
                     <div class="card-image">
-                        <img src="/images/chocolate-rasp.jpg" alt="Pizza Margherita">
+                        <img src="/images/chocolate-rasp.jpg" alt="Chocolate Raspberry Opera Cake">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 100 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Advanced</span>
@@ -319,8 +330,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -332,13 +342,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>  
-                 <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="italian comfort quick" data-name="Homemade Margherita Pizza" data-tags="italian pizza margherita tomato mozzarella">
                     <div class="card-image">
                         <img src="/images/pizza-margherita.jpg" alt="Pizza Margherita">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 35 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -372,8 +383,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -385,13 +395,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>   
-                <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="italian quick" data-name="Classic Carbonara" data-tags="italian pasta carbonara bacon eggs">
                     <div class="card-image">
-                        <img src="/images/carbonara.jpg" alt="Creamy Carbonara Pasta">
+                        <img src="/images/carbonara.jpg" alt="Classic Carbonara">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 25 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -425,8 +436,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -438,13 +448,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>     
-                 <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="italian quick" data-name="Creamy Tuscan Chicken" data-tags="italian chicken cream spinach tomatoes">
                     <div class="card-image">
                         <img src="/images/creamy-tuscan-chicken.png" alt="Creamy Tuscan Chicken">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 30 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -478,8 +489,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -491,13 +501,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>  
-                <article class="recipe-card card-hover-effect" data-category="comfort" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="comfort quick" data-name="Spicy Honey Garlic Shrimp Bowls" data-tags="shrimp honey garlic spicy bowl rice">
                     <div class="card-image">
                         <img src="/images/Spicy-Shrimp.jpg" alt="Spicy Shrimp Bowl">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 30 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -531,8 +542,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -544,13 +554,14 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>   
-                <article class="recipe-card card-hover-effect" data-category="italian" data-delay="100">
+                </article>
+
+                <article class="recipe-card card-hover-effect" data-category="italian quick" data-name="Lemon Garlic Butter Shrimp Pasta" data-tags="italian pasta shrimp lemon garlic">
                     <div class="card-image">
                         <img src="/images/lemon.jpg" alt="Lemon Garlic Butter Shrimp Pasta">
                         <div class="card-overlay">
                             <span class="recipe-time"><i class="fas fa-clock"></i> 30 min</span>
-                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
+                            <span class="recipe-difficulty"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="m17.13,5.54c-.8-2.12-2.81-3.54-5.13-3.54s-4.33,1.42-5.13,3.54c-2.74.31-4.87,2.65-4.87,5.46,0,2.07,1.18,3.95,3,4.88v2.12c0,.55.45,1,1,1h12c.55,0,1-.45,1-1v-2.12c1.82-.93,3-2.81,3-4.88,0-2.82-2.13-5.15-4.87-5.46Z"/>
                             <path d="M5 20H19V22H5z"/>
                             </svg> Easy</span>
@@ -584,8 +595,7 @@
                         </div>
                         <div class="card-meta">
                             <div class="author-info">
-                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg">
-
+                                <svg class="author-avatar" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a5 5 0 1 0 0 10 5 5 0 1 0 0-10M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1"/>
                                 </svg>
                                 <span class="card-author">By Chef Paul</span>
@@ -597,142 +607,18 @@
                             Read Recipe
                         </a>
                     </div>
-                </article>      
-    </section>
-
-    <section class="stories-section" id="stories">
-        <div class="container">
-            <div class="section-header reveal-animation">
-                <h2 class="section-title">
-                    <span class="title-script">Culinary Stories</span>
-                    <div class="title-decoration">
-                        <span class="decoration-line"></span>
-                        <i class="fas fa-book-heart decoration-icon"></i>
-                        <span class="decoration-line"></span>
-                    </div>
-                </h2>
-                <p class="section-subtitle">Every recipe has a story, every meal creates memories</p>
-            </div>
-            
-            <div class="stories-grid">
-                <article class="story-card slide-in-left">
-                    <div class="story-content">
-                        <div class="story-meta">
-                            <span class="story-category"><i class="fas fa-home"></i> Family Traditions</span>
-                            <span class="story-date">December 10, 2024</span>
-                        </div>
-                        <h3 class="story-title">The Art of Sunday Dinners</h3>
-                        <p class="story-excerpt">How one tradition brought three generations together every week, creating bonds that lasted a lifetime through the simple act of sharing a meal.</p>
-                        <div class="story-stats">
-                            <span><i class="fas fa-clock"></i> 8 min read</span>
-                            <span><i class="fas fa-heart"></i> 234 likes</span>
-                        </div>
-                        <a href="/stories/sunday-dinners.html" class="story-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read More
-                        </a>
-                    </div>
-                    <div class="story-image">
-                        <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Family dinner">
-                    </div>
-                </article>
-
-                <article class="story-card slide-in-right">
-                    <div class="story-image">
-                        <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kitchen wisdom">
-                    </div>
-                    <div class="story-content">
-                        <div class="story-meta">
-                            <span class="story-category"><i class="fas fa-lightbulb"></i> Kitchen Wisdom</span>
-                            <span class="story-date">December 8, 2024</span>
-                        </div>
-                        <h3 class="story-title">Kitchen Wisdom from Nonna</h3>
-                        <p class="story-excerpt">Lessons learned not from cookbooks, but from watching weathered hands work magic with simple ingredients and boundless love.</p>
-                        <div class="story-stats">
-                            <span><i class="fas fa-clock"></i> 10 min read</span>
-                            <span><i class="fas fa-heart"></i> 189 likes</span>
-                        </div>
-                        <a href="/stories/kitchen-wisdom.html" class="story-link">
-                            <i class="fas fa-arrow-right"></i>
-                            Read More
-                        </a>
-                    </div>
                 </article>
             </div>
-        </div>
-    </section>
 
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="about-content reveal-animation">
-                <div class="about-text">
-                    <h2 class="section-title">
-                        <span class="title-script">About Golden Spoon</span>
-                    </h2>
-                    <p class="about-description">
-                        Welcome to Golden Spoon Kitchen, where every recipe tells a story and every meal creates a memory. Our mission is to preserve the art of traditional cooking while making it accessible to modern kitchens.
-                    </p>
-                    <p class="about-description">
-                        Founded by passionate home cooks who believe that the best recipes are passed down through generations, we curate authentic dishes that have stood the test of time. Each recipe comes with its story, cooking tips, and the love that makes every dish special.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-award feature-icon"></i>
-                            <span class="feature-text">Expert Tested</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart feature-icon"></i>
-                            <span class="feature-text">Family Approved</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-trophy feature-icon"></i>
-                            <span class="feature-text">Time-Tested</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/4253302/pexels-photo-4253302.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cooking with love">
-                </div>
+            <div class="no-results" id="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No recipes found</h3>
+                <p>Try adjusting your search or filters</p>
             </div>
         </div>
     </section>
 
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content reveal-animation">
-                <h2 class="newsletter-title">
-                    <span class="title-script" style="color: #fefefe;">Stay Connected</span>
-                </h2>
-                <p class="newsletter-subtitle">Get weekly recipes and cooking tips delivered to your inbox</p>
-                <form class="newsletter-form" id="newsletter-form">
-                    <div class="input-group">
-                        <i class="fas fa-envelope input-icon"></i>
-                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
-                    </div>
-                    <button type="submit" class="newsletter-button">
-                        <i class="fas fa-paper-plane"></i>
-                        Subscribe
-                    </button>
-                </form>
-                <div class="newsletter-benefits">
-                    <div class="benefit">
-                        <i class="fas fa-utensils"></i>
-                        <span>Weekly Recipes</span>
-                    </div>
-                    <div class="benefit">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Cooking Tips</span>
-                    </div>
-                    <div class="benefit">
-                        <i class="fas fa-gift"></i>
-                        <span>Exclusive Content</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
@@ -795,6 +681,68 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
+    <script>
+        const searchInput = document.getElementById('recipe-search');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const recipeCards = document.querySelectorAll('.recipe-card');
+        const recipeCount = document.getElementById('recipe-count');
+        const noResults = document.getElementById('no-results');
+        const recipesGrid = document.getElementById('recipes-grid');
+
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        function filterRecipes() {
+            let visibleCount = 0;
+
+            recipeCards.forEach(card => {
+                const categories = card.dataset.category.split(' ');
+                const name = card.dataset.name.toLowerCase();
+                const tags = card.dataset.tags.toLowerCase();
+                const searchTerm = currentSearch.toLowerCase();
+
+                const matchesFilter = currentFilter === 'all' || categories.includes(currentFilter);
+                const matchesSearch = name.includes(searchTerm) || tags.includes(searchTerm);
+
+                if (matchesFilter && matchesSearch) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            recipeCount.textContent = visibleCount;
+
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+                recipesGrid.style.display = 'none';
+            } else {
+                noResults.style.display = 'none';
+                recipesGrid.style.display = 'grid';
+            }
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            currentSearch = e.target.value;
+            filterRecipes();
+        });
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                filterRecipes();
+            });
+        });
+
+        document.querySelectorAll('.recipe-card').forEach(card => {
+            card.classList.add('visible');
+        });
+
+				
+    </script>
 </body>
 </html>
