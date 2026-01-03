@@ -102,6 +102,14 @@ const recipes = [
           image: "/images/apple-pie.png",
           category: "Desserts",
           link: "/recipes/ultimate-apple-pie.html"
+        },
+          {
+          id: 14,
+          title: "The Ultimate Cheeseburger",
+          description: "A classic, juicy cheeseburger featuring a hand-formed 80/20 beef patty, melted cheddar, and a signature 'GoldenSpoon' burger sauce",
+          image: "/images/cheeseburger.png",
+          category: "Dinner",
+          link: "/recipes/ultimate-cheeseburger.html"
         }
   
 ];
