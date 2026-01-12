@@ -110,6 +110,14 @@ const recipes = [
           image: "/images/cheeseburger.png",
           category: "Dinner",
           link: "/recipes/ultimate-cheeseburger.html"
+        },
+          {
+          id: 15,
+          title: "The Traditional Lasagna",
+          description: "A legendary Italian-American classic.",
+          image: "/images/lasagna.png",
+          category: "Dinner",
+          link: "/recipes/ultimate-meat-lasagna.html"
         }
   
 ];
