@@ -118,6 +118,14 @@ const recipes = [
           image: "/images/lasagna.png",
           category: "Dinner",
           link: "/recipes/ultimate-meat-lasagna.html"
+        },
+          {
+          id: 16,
+          title: "The Best Baked Mac & Cheese",
+          description: "A decadent, creamy baked mac & cheese made with a blend of sharp cheddar and Gruyère cheeses, topped with a crispy breadcrumb crust.",
+          image: "/images/mac-cheese.png",
+          category: "Dinner",
+          link: "/recipes/ultimate-baked-mac-cheese.html"
         }
   
 ];
