@@ -126,6 +126,14 @@ const recipes = [
           image: "/images/mac-cheese.png",
           category: "Dinner",
           link: "/recipes/ultimate-baked-mac-cheese.html"
+        },
+         {
+          id: 17,
+          title: "The Crackly-Top Brownies",
+          description: "The ultimate fudgy brownies with a signature crackly top, achieved through a precise balance of melted chocolate, brown sugar, and egg whisking technique.",
+          image: "/images/brownies.jpeg",
+          category: "Desserts",
+          link: "/recipes/ultimate-fudgy-brownies.html"
         }
   
 ];
