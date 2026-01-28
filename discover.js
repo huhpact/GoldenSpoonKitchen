@@ -134,6 +134,14 @@ const recipes = [
           image: "/images/brownies.jpeg",
           category: "Desserts",
           link: "/recipes/ultimate-fudgy-brownies.html"
+        },
+         {
+          id: 18,
+          title: "Buttermilk Pancakes",
+          description: "Fluffy, tender pancakes made with a buttermilk batter for a slight tang and extra moisture.",
+          image: "/images/pancakes.png",
+          category: "Breakfast",
+          link: "/recipes/ultimate-buttermilk-pancakes.html"
         }
   
 ];
