@@ -142,6 +142,14 @@ const recipes = [
           image: "/images/pancakes.png",
           category: "Breakfast",
           link: "/recipes/ultimate-buttermilk-pancakes.html"
+        },
+        {
+          id: 19,
+          title: "Crispy Vegetable Samosas",
+          description: "Crispy, flaky samosas filled with spiced potatoes and peas, perfect for a quick snack or appetizer.",
+          image: "/images/samosas.png",
+          category: "Appetizers",
+          link: "/recipes/authentic-vegetable-samosas.html"
         }
   
 ];
