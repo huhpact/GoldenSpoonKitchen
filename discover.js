@@ -150,6 +150,14 @@ const recipes = [
           image: "/images/samosas.png",
           category: "Appetizers",
           link: "/recipes/authentic-vegetable-samosas.html"
+        },
+        {
+          id: 20,
+          title: "French Onion Soup",
+          description: "A traditional French onion soup featuring slow-caramelized onions, rich beef stock, and a melted Gruyère cheese topping.",
+          image: "/images/french-onion.png",
+          category: "Soups",
+          link: "/recipes/french-onion-soup.html"
         }
   
 ];
