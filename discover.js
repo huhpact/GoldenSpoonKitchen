@@ -158,6 +158,14 @@ const recipes = [
           image: "/images/french-onion.png",
           category: "Soups",
           link: "/recipes/french-onion-soup.html"
+        },
+         {
+          id: 21,
+          title: "Birria Tacos with Consommé",
+          description: "Authentic Mexican birria tacos with a rich, spiced beef consommé for dipping.",
+          image: "/images/tacos.jpeg",
+          category: "Dinner",
+          link: "/recipes/authentic-birria-tacos.html"
         }
   
 ];
