@@ -166,7 +166,16 @@ const recipes = [
           image: "/images/tacos.jpeg",
           category: "Dinner",
           link: "/recipes/authentic-birria-tacos.html"
-        }
+        },
+         {
+          id: 22,
+          title: "Chicken Tikka Masala",
+          description: "Authentic Indian chicken tikka masala with a rich, creamy tomato sauce.",
+          image: "/images/chicken-tikka-masala.jpeg",
+          category: "Dinner",
+          link: "/recipes/chicken-tikka-masala.html"
+        },
+
   
 ];
 
