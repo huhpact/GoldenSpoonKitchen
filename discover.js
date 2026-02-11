@@ -175,6 +175,14 @@ const recipes = [
           category: "Dinner",
           link: "/recipes/chicken-tikka-masala.html"
         },
+        {
+          id: 23,
+          title: "Carrot Cake with Brown Butter Frosting",
+          description: "The ultimate moist carrot cake with a rich brown butter cream cheese frosting.",
+          image: "/images/carrot-cake.jpeg",
+          category: "Desserts",
+          link: "/recipes/ultimate-carrot-cake.html"
+        }
 
   
 ];
