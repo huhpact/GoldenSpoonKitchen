@@ -177,11 +177,11 @@ const recipes = [
         },
         {
           id: 23,
-          title: "Carrot Cake with Brown Butter Frosting",
-          description: "The ultimate moist carrot cake with a rich brown butter cream cheese frosting.",
-          image: "/images/carrot-cake.jpeg",
-          category: "Desserts",
-          link: "/recipes/ultimate-carrot-cake.html"
+          title: "Buttermilk Fried Chicken",
+          description: "The ultimate Southern buttermilk fried chicken with a crispy crust and juicy interior.",
+          image: "/images/fried-chicken.jpeg",
+          category: "Dinner",
+          link: "/recipes/southern-fried-chicken.html"
         }
 
   
