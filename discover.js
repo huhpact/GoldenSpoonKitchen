@@ -198,6 +198,14 @@ const recipes = [
           image: "/images/meatloaf.jpeg",
           category: "Dinner",
           link: "/recipes/ultimate-glazed-meatloaf.html"
+        },
+         {
+          id: 26,
+          title: "Ultimate Banana Pudding",
+          description: "The ultimate no-bake Southern banana pudding with a creamy vanilla layer and fresh bananas.",
+          image: "/images/banana-pudding.jpeg",
+          category: "Desserts",
+          link: "/recipes/ultimate-banana-pudding.html"
         }
 
 
